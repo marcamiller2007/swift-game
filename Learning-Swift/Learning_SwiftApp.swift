@@ -1,0 +1,17 @@
+//
+//  Learning_SwiftApp.swift
+//  Learning-Swift
+//
+//  Created by Marc Miller on 4/19/25.
+//
+
+import SwiftUI
+
+@main
+struct Learning_SwiftApp: App {
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+    }
+}
