@@ -7,11 +7,11 @@
 
 class Sprite: Object {
     
-    var texture: Int
+    var texture: Texture
     // stores the index of the image to be used as a texture
     
     init (
-        texture: Int,
+        texture: Texture,
         mass: Double = 1,
         aVector: Vector = Vector(0, 0),
         vVector: Vector = Vector(0, 0),

@@ -24,14 +24,15 @@ class Game {
         // creates our doodle (player controlled character
         
         let doodle: Sprite = Sprite(
-            texture: 1,
+            texture: .doodle,
             mass: 100,
             aVector: Vector(0, 0),
             vVector: Vector(0, 0),
             position: Vector(200, 0),
         )
         
-        doodle.addForce(Vector(0, -9.81 * doodle.mass))
+        let currentForces: Int = doodle.addForce(Vector(0, -9.81 * doodle.mass))
+        print(currentForces)
         
         self.doodle = doodle
         
@@ -39,7 +40,7 @@ class Game {
         
         for _ in 0..<20 {
             let platform: Sprite = Sprite(
-                texture: 2,
+                texture: .platform,
                 mass: 0,
                 aVector: Vector(0, 0),
                 vVector: Vector(0, 0),
